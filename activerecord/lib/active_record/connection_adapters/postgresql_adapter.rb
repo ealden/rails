@@ -570,7 +570,7 @@ module ActiveRecord
                                         self.class.type_cast_config_to_integer(config.fetch(:statement_limit) { 1000 })
 
         if postgresql_version < 80200
-          raise "Your version of PostgreSQL (#{postgresql_version}) is too old, please upgrade!"
+          #raise "Your version of PostgreSQL (#{postgresql_version}) is too old, please upgrade!"
         end
 
         @type_map = OID::TypeMap.new
